@@ -13,7 +13,7 @@ public class foreachOperator {
     public static void main(String[] args) {
         SparkConf conf = new SparkConf()
                 .setMaster("local")
-                .setAppName("count");
+                .setAppName("foreach");
 
         JavaSparkContext sc = new JavaSparkContext(conf);
         sc.setLogLevel("WARN");
