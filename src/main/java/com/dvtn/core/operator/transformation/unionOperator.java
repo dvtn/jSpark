@@ -21,7 +21,7 @@ public class unionOperator {
     public static void main(String[] args) {
         SparkConf conf = new SparkConf()
                 .setMaster("local")
-                .setAppName("leftOuterJoin");
+                .setAppName("union");
 
         JavaSparkContext sc = new JavaSparkContext(conf);
         sc.setLogLevel("WARN");
