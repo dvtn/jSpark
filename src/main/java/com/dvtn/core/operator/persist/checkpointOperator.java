@@ -13,7 +13,7 @@ import org.apache.spark.api.java.JavaSparkContext;
  *
  * cache, persist, checkpoint持久化的单位都是partition,都是懒执行算子
  */
-public class checkpoint {
+public class checkpointOperator {
     public static void main(String[] args) {
         SparkConf conf = new SparkConf()
                 .setMaster("local")
