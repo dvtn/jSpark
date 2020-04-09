@@ -9,7 +9,7 @@ import scala.Tuple2;
 import java.util.Arrays;
 
 /**
- * subtract:取两个RDD的差集
+ * subtract:取两个RDD的差集(可作用于KV,也可作用于非KV格式)
  * public JavaPairRDD<K,V> subtract(JavaPairRDD<K,V> other,int numPartitions)
  *
  */
