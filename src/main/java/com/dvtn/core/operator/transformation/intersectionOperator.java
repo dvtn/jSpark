@@ -9,7 +9,7 @@ import scala.Tuple2;
 import java.util.Arrays;
 
 /**
- * intersection:
+ * intersection: 可以作用于KV格式的RDD, 也可以作用于非KV格式的RDD
  *  public JavaPairRDD<K,V> intersection(JavaPairRDD<K,V> other)
  *      返回两个K,V格式的RDD的交集，同时实现去重功能
  *
