@@ -11,6 +11,7 @@ import java.util.Arrays;
 /**
  * intersection: 可以作用于KV格式的RDD, 也可以作用于非KV格式的RDD
  *  public JavaPairRDD<K,V> intersection(JavaPairRDD<K,V> other)
+ *
  *      返回两个K,V格式的RDD的交集，同时实现去重功能
  *
  * 注意：
@@ -25,7 +26,7 @@ public class intersectionOperator {
                 .setAppName("intersection");
 
         JavaSparkContext sc = new JavaSparkContext(conf);
-        sc.setLogLevel("WARN");
+        sc.setLogLevel("WARN");//设置log级别
 
         JavaPairRDD<String, String> rdd1 = sc.parallelizePairs(Arrays.asList(
                 new Tuple2<String, String>("文章", "马伊俐"),
