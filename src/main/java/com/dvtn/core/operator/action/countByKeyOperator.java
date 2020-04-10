@@ -40,8 +40,8 @@ public class countByKeyOperator {
          * 张三丰---3
          * 风清扬---3
          */
-        Map<String, Long> mapRDD = rdd.countByKey();
-        Set<Map.Entry<String, Long>> entries = mapRDD.entrySet();
+        Map<String, Long> mapResult = rdd.countByKey();
+        Set<Map.Entry<String, Long>> entries = mapResult.entrySet();
         for(Map.Entry<String, Long> entry:entries){
             System.out.println(entry.getKey()+"---"+entry.getValue());
         }
