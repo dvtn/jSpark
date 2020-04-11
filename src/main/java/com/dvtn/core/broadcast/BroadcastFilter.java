@@ -1,4 +1,4 @@
-package com.dvtn.core.accumulator;
+package com.dvtn.core.broadcast;
 
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
